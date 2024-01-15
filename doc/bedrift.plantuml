@@ -12,6 +12,7 @@ class Leder{
 }
 
 class Bedrift{
+    str navn
     list ansatte
     finn_ansatt(str navn)
     legg_til_ansatt(str navn, leder=None)
