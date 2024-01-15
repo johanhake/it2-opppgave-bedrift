@@ -1,0 +1,25 @@
+@startuml nisser
+
+class Ansatt{
+    str navn
+    int ansattnr
+    float lønn
+}
+
+class Leder{
+    liste ansatte
+    legg_til_ansatt(Ansatt ansatt)
+}
+
+class Bedrift{
+    list ansatte
+    finn_ansatt(str navn)
+    legg_til_ansatt(str navn, leder=None)
+}
+
+
+Leder --|> Ansatt
+Leder --o Ansatt
+Bedrift --o Ansatt
+
+@enduml
