@@ -1,4 +1,4 @@
-@startuml nisser
+@startuml bedrift
 
 class Ansatt{
     str navn
