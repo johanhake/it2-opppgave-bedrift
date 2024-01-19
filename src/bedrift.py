@@ -25,6 +25,8 @@ class Leder(Ansatt):
         # Må vi endre lønnen?
         if self.lønn < ny_ansatt.lønn*1.5:
             self.lønn = ny_ansatt.lønn*1.5
+        
+        self.ansatte.append(ny_ansatt)
 
 class Bedrift:
     def __init__(self, navn:str)->None:

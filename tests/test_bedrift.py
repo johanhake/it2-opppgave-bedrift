@@ -23,4 +23,5 @@ def test_leder_lønn():
     bedrift = Bedrift("Foo")
     leder = bedrift.legg_til_leder("Arne", 750000.)
     bedrift.legg_til_ansatt("Lise", 600000., leder.navn)
+    assert len(leder.ansatte) == 1
     assert leder.lønn >= 600000*1.5
